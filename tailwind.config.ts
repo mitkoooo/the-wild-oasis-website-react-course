@@ -35,6 +35,7 @@ const config: Config = {
           900: "#4B351B",
           950: "#382814",
         },
+        white: { 0: "#fff" },
       },
     },
   },

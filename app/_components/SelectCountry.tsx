@@ -1,5 +1,5 @@
 import { getCountries } from "@/app/_lib/data-service";
-import { Country } from "../_ts/interfaces/app_interfaces";
+import { Country } from "@/app/_ts/interfaces/app_interfaces";
 
 // Let's imagine your colleague already built this component 😃
 
@@ -17,7 +17,6 @@ async function SelectCountry({
   className,
 }: SelectCountryProps) {
   const countries: Array<Country> = await getCountries();
-  console.log(countries);
   const flag =
     countries.find((country) => country.name === defaultCountry)?.flag ?? "";
 
