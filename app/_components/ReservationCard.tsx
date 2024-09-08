@@ -11,7 +11,7 @@ export const formatDistanceFromNow = (dateStr: string) =>
   }).replace("about ", "");
 
 interface ReservationCardProps {
-  booking: Booking;
+  booking: any;
   onDelete: (bookingId: number) => Promise<void>;
 }
 
