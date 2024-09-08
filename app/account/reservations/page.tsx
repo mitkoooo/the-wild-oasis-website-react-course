@@ -14,7 +14,7 @@ export default async function Page() {
   if (session === null || !session?.user?.id)
     throw new Error("The session is null");
 
-  const bookings: Array<Booking> = await getBookings(+session?.user?.id);
+  const bookings: Array<any> = await getBookings(+session?.user?.id);
 
   return (
     <div>
